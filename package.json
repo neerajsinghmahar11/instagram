@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "heroku": "^7.65.0",
+    "json": "^11.0.0",
+    "json-server": "^0.17.1",
+    "server": "^1.0.37"
+  },
+  "name": "instagram",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neerajsinghmahar11/instagram.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neerajsinghmahar11/instagram/issues"
+  },
+  "homepage": "https://github.com/neerajsinghmahar11/instagram#readme",
+  "description": ""
+}

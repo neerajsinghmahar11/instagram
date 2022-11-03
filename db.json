@@ -2,8 +2,8 @@
   "posts": [
     {
       "id": 1,
-      "caption": "json-server",
-      "image_url": "typicode"
+      "caption": "this is for you",
+      "image_url": "https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?cs=srgb&dl=pexels-pixabay-36717.jpg&fm=jpg"
     }
   ]
 }

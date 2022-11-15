@@ -8,6 +8,7 @@ const navbar=()=> {
  
    <div id="options">
      <a href="/create.html"><button id='submit_btn'><a href="./create.html">Create Post</a></button></a>
+     <a href="/create.html"><button id='Recycle'><a href="./recyclebin.html">Recycle Bin</a></button></a>
    </div>`
 };
 

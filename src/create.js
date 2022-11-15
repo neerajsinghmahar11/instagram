@@ -74,11 +74,25 @@ const createpost=async()=>{
 
     let data=await res.json();
     console.log("data",data);
+    window.location.reload();
 }
 
 
+let arr=JSON.parse(localStorage.getItem("delData")) ||[];
 const deletepost=async()=>{
     let del_id=document.getElementById("deleteId").value;
+
+    let response=await fetch(`https://glacial-eyrie-24074.herokuapp.com/posts/${del_id}`,{
+        method:"GET",
+        headers:{
+            "content-Type":"application/json",
+        },
+        
+    });
+    let DelData=await response.json();
+    arr.push(DelData);
+    localStorage.setItem("delData", JSON.stringify(arr));
+    
 
     let res=await fetch(`https://glacial-eyrie-24074.herokuapp.com/posts/${del_id}`,{
         method:"DELETE",
@@ -88,7 +102,7 @@ const deletepost=async()=>{
     });
     let data=await res.json();
     console.log(data);
-
+    
 }
 
 
@@ -127,3 +141,5 @@ const UpdatePost= async()=>{
     }
     
 }
+
+
